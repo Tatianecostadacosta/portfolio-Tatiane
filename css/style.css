@@ -1,0 +1,189 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* BASE */
+body {
+  background: linear-gradient(135deg, #1a0b2e 0%, #2d1b4e 50%, #4a2c6d 100%);
+  color: #e0e0e0;
+  min-height: 100vh;
+}
+
+/* HERO */
+.hero {
+  background: linear-gradient(135deg, #6b46c1 0%, #9333ea 100%);
+  color: #ffffff;
+  padding: 18px 10px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(147, 51, 234, 0.3);
+}
+
+.hero h1 {
+  font-size: 30px;
+  margin-bottom: 6px;
+}
+
+.hero h2 {
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+.hero p {
+  font-size: 13px;
+}
+
+
+/* PROJETOS */
+.projetos {
+  padding: 50px 20px;
+  background: rgba(42, 27, 78, 0.4);
+}
+
+.projetos h2 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #c4b5fd;
+  font-weight: 700;
+}
+
+/* CARDS */
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: linear-gradient(135deg, #2d1b4e 0%, #3d2661 100%);
+  border: 2px solid #8b5cf6;
+  border-radius: 16px;
+  padding: 24px;
+  width: 280px;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(139, 92, 246, 0.2);
+}
+
+.card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #c4b5fd;
+  font-weight: 600;
+}
+
+.card p {
+  font-size: 14px;
+  margin-bottom: 16px;
+  color: #d1d5db;
+  line-height: 1.5;
+}
+
+.card a {
+  font-size: 14px;
+  color: #a78bfa;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 8px 20px;
+  border: 2px solid #8b5cf6;
+  border-radius: 8px;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.card a:hover {
+  background: #8b5cf6;
+  color: #ffffff;
+  transform: scale(1.05);
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(139, 92, 246, 0.4);
+  border-color: #a78bfa;
+}
+
+/* CONTATO */
+.contato {
+  background: linear-gradient(135deg, #6b46c1 0%, #4c1d95 100%);
+  padding: 18px 0;
+  text-align: center;
+  border-top: 3px solid #a78bfa;
+  box-shadow: 0 -4px 20px rgba(167, 139, 250, 0.2);
+}
+
+.contato::after {
+  content: "";
+  display: block;
+  width: 70%;
+  max-width: 1100px;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, #a78bfa, transparent);
+  margin: 25px auto 0 auto;
+}
+
+.contato-box {
+  width: 900px;
+  max-width: 90%;
+  background: rgba(45, 27, 78, 0.5);
+  backdrop-filter: blur(10px);
+  padding: 30px;
+  border-radius: 16px;
+  border: 2px solid #8b5cf6;
+  margin: 0 auto;
+  box-shadow: 0 8px 25px rgba(139, 92, 246, 0.3);
+}
+
+.contato-box h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #c4b5fd;
+  font-weight: 700;
+}
+
+.contato-box p {
+  font-size: 16px;
+  margin: 12px 0;
+  color: #e0e0e0;
+}
+
+.contato-box a {
+  color: #a78bfa;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contato-box a:hover {
+  color: #c4b5fd;
+  text-decoration: underline;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .hero h2 {
+    font-size: 18px;
+  }
+
+  .projetos h2 {
+    font-size: 28px;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .contato-box h2 {
+    font-size: 26px;
+  }
+}
