@@ -8,19 +8,76 @@
 </head>
 <body>
 
+  <header class="header">
+  <div class="nav-container">
+    <span class="logo">Tatiane Costa</span>
+
+    <nav class="nav">
+      <a href="#sobre">Sobre</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#contato">Contato</a>
+    </nav>
+
+    <!-- Botão hambúrguer (mobile) -->
+    <div class="menu-toggle" id="menu-toggle">
+      ☰
+    </div>
+  </div>
+</header>
+
   <!-- APRESENTAÇÃO -->
-  <section class="hero">
-    <h1>Tatiane Costa</h1>
-    <h2>Desenvolvedora Front-End em transição de carreira</h2>
+  <section class="hero" id="sobre">
+  <div class="hero-box">
+    <h1>Desenvolvedora Front-End</h1>
+    <h2>Tatiane Costa</h2>
     <p>
       Concluinte em Análise e Desenvolvimento de Sistemas, aguardando colação de grau,
-com foco em desenvolvimento web e projetos práticos em Front-End.
-
+      com foco em desenvolvimento web e projetos práticos em Front-End.
     </p>
-  </section>
+  </div>
+</section>
+
+
+
+<!-- SKILLS -->
+<section class="skills" id="skills">
+  <h2>Skills</h2>
+
+  <div class="skills-container">
+    <div class="skill-card">
+      <h3>HTML5</h3>
+      <p>Estruturação semântica, boas práticas e acessibilidade.</p>
+    </div>
+
+    <div class="skill-card">
+      <h3>CSS3</h3>
+      <p>Layouts responsivos, Flexbox, Grid e design moderno.</p>
+    </div>
+
+    <div class="skill-card">
+      <h3>JavaScript</h3>
+      <p>Manipulação do DOM, interações e lógica básica.</p>
+    </div>
+
+    <div class="skill-card">
+      <h3>Git & GitHub</h3>
+      <p>Versionamento de código, branches e deploy.</p>
+    </div>
+
+    <div class="skill-card">
+      <h3>Responsividade</h3>
+      <p>Layouts adaptáveis para desktop, tablet e mobile.</p>
+    </div>
+
+    <div class="skill-card">
+      <h3>Deploy</h3>
+      <p>Publicação de projetos com Vercel e GitHub Pages.</p>
+    </div>
+  </div>
+</section>
 
   <!-- PROJETOS -->
-  <section class="projetos">
+  <section class="projetos" id="projetos">
     <h2>Projetos</h2>
 
     <div class="cards">
@@ -51,7 +108,7 @@ com foco em desenvolvimento web e projetos práticos em Front-End.
   </section>
 
   <!-- CONTATO -->
-  <section class="contato">
+  <section class="contato" id="contato">
    <div class="contato-box">
   <h2>Contato</h2>
 
@@ -65,8 +122,10 @@ com foco em desenvolvimento web e projetos práticos em Front-End.
     </a>
   </p>
 </div>
-
   </section>
+
+  <script src="css/js/script.js"></script>
+
 
 </body>
 </html>

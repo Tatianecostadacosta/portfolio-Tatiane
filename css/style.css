@@ -1,4 +1,6 @@
-/* RESET */
+/* =======================
+   RESET
+======================= */
 * {
   margin: 0;
   padding: 0;
@@ -6,52 +8,139 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* BASE */
+/* =======================
+   BASE
+======================= */
 body {
   background: linear-gradient(135deg, #1a0b2e 0%, #2d1b4e 50%, #4a2c6d 100%);
   color: #e0e0e0;
   min-height: 100vh;
 }
 
-/* HERO */
+/* =======================
+   HEADER / MENU
+======================= */
+.header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background: rgba(26, 11, 46, 0.9);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+  border-bottom: 1px solid rgba(167, 139, 250, 0.3);
+}
+
+.nav-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 14px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 18px;
+  color: #c4b5fd;
+}
+
+/* MENU DROPDOWN */
+.nav {
+  display: none;
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  background: rgba(45, 27, 78, 0.95);
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 12px;
+  gap: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.nav.active {
+  display: flex;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #e0e0e0;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav a:hover {
+  color: #a78bfa;
+}
+
+/* BOTÃO HAMBÚRGUER */
+.menu-toggle {
+  font-size: 26px;
+  cursor: pointer;
+  color: #c4b5fd;
+  user-select: none;
+}
+
+/* =======================
+   HERO
+======================= */
 .hero {
   background: linear-gradient(135deg, #6b46c1 0%, #9333ea 100%);
-  color: #ffffff;
-  padding: 18px 10px;
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.hero-box h1 {
+  font-size: 34px;
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+
+.hero-box h2 {
+  font-size: 18px;
+  margin-bottom: 14px;
+  font-weight: 600;
+  color: #4c1d95;
+}
+
+.hero-box p {
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.hero-box {
+  background: #ffffff;
+  color: #2d1b4e;
+  max-width: 900px;
+  padding: 40px 30px;
+  border-radius: 20px;
   text-align: center;
-  box-shadow: 0 4px 20px rgba(147, 51, 234, 0.3);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
 }
 
-.hero h1 {
-  font-size: 30px;
-  margin-bottom: 6px;
-}
-
-.hero h2 {
-  font-size: 16px;
-  margin-bottom: 6px;
-}
-
-.hero p {
-  font-size: 13px;
-}
-
-
-/* PROJETOS */
+/* =======================
+   PROJETOS
+======================= */
 .projetos {
   padding: 50px 20px;
-  background: rgba(42, 27, 78, 0.4);
+  background: rgba(255, 255, 255, 0.95);
 }
 
 .projetos h2 {
   text-align: center;
   font-size: 36px;
   margin-bottom: 40px;
-  color: #c4b5fd;
+  color: #2d1b4e;
   font-weight: 700;
 }
 
-/* CARDS */
+/* =======================
+   CARDS
+======================= */
 .cards {
   display: flex;
   justify-content: center;
@@ -70,11 +159,16 @@ body {
   box-shadow: 0 4px 15px rgba(139, 92, 246, 0.2);
 }
 
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(139, 92, 246, 0.4);
+  border-color: #a78bfa;
+}
+
 .card h3 {
   font-size: 20px;
   margin-bottom: 10px;
   color: #c4b5fd;
-  font-weight: 600;
 }
 
 .card p {
@@ -102,13 +196,9 @@ body {
   transform: scale(1.05);
 }
 
-.card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 12px 30px rgba(139, 92, 246, 0.4);
-  border-color: #a78bfa;
-}
-
-/* CONTATO */
+/* =======================
+   CONTATO
+======================= */
 .contato {
   background: linear-gradient(135deg, #6b46c1 0%, #4c1d95 100%);
   padding: 18px 0;
@@ -143,7 +233,6 @@ body {
   font-size: 32px;
   margin-bottom: 20px;
   color: #c4b5fd;
-  font-weight: 700;
 }
 
 .contato-box p {
@@ -156,7 +245,6 @@ body {
   color: #a78bfa;
   font-weight: bold;
   text-decoration: none;
-  transition: color 0.3s ease;
 }
 
 .contato-box a:hover {
@@ -164,7 +252,59 @@ body {
   text-decoration: underline;
 }
 
-/* RESPONSIVO */
+/* =======================
+   SKILLS
+======================= */
+.skills {
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #6b46c1 0%, #9333ea 100%);
+  text-align: center;
+}
+
+.skills h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #c4b5fd;
+  font-weight: 700;
+}
+
+.skills-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 por linha */
+  gap: 20px;
+}
+
+.skill-card {
+  background: rgba(45, 27, 78, 0.6);
+  border: 2px solid #8b5cf6;
+  border-radius: 16px;
+  padding: 24px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(139, 92, 246, 0.2);
+}
+
+.skill-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(139, 92, 246, 0.4);
+}
+
+.skill-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #c4b5fd;
+}
+
+.skill-card p {
+  font-size: 14px;
+  color: #e0e0e0;
+  line-height: 1.5;
+}
+
+/* =======================
+   RESPONSIVO
+======================= */
 @media (max-width: 768px) {
   .hero h1 {
     font-size: 32px;
@@ -186,4 +326,21 @@ body {
   .contato-box h2 {
     font-size: 26px;
   }
+
+  .skills h2 {
+  font-size: 28px;
 }
+
+.skills-container {
+  grid-template-columns: repeat(2, 1fr);
+}
+}
+
+@media (max-width: 480px) {
+  .skills-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
