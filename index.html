@@ -1,131 +1,330 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfólio | Tatiane Costa</title>
-  <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tatiane Costa — Front-End Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
-  <header class="header">
-  <div class="nav-container">
-    <span class="logo">Tatiane Costa</span>
-
-    <nav class="nav">
-      <a href="#sobre">Sobre</a>
-      <a href="#projetos">Projetos</a>
-      <a href="#contato">Contato</a>
-    </nav>
-
-    <!-- Botão hambúrguer (mobile) -->
-    <div class="menu-toggle" id="menu-toggle">
-      ☰
+  <!-- ── NAV ── -->
+  <header class="nav">
+    <div class="nav-inner">
+      <a href="#sobre" class="nav-brand">Tatiane Costa</a>
+      <ul class="nav-links" id="navLinks">
+        <a href="#sobre">Sobre</a>
+        <a href="#skills">Skills</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#contato" class="nav-cta">Fale comigo</a>
+      </ul>
+      <div class="nav-hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
     </div>
-  </div>
-</header>
+  </header>
 
-  <!-- APRESENTAÇÃO -->
+  <!-- ── HERO ── -->
   <section class="hero" id="sobre">
-  <div class="hero-box">
-    <h1>Desenvolvedora Front-End</h1>
-    <h2>Tatiane Costa</h2>
-    <p>
-      Concluinte em Análise e Desenvolvimento de Sistemas, aguardando colação de grau,
-      com foco em desenvolvimento web e projetos práticos em Front-End.
-    </p>
-  </div>
-</section>
-
-
-
-<!-- SKILLS -->
-<section class="skills" id="skills">
-  <h2>Skills</h2>
-
-  <div class="skills-container">
-    <div class="skill-card">
-      <h3>HTML5</h3>
-      <p>Estruturação semântica, boas práticas e acessibilidade.</p>
-    </div>
-
-    <div class="skill-card">
-      <h3>CSS3</h3>
-      <p>Layouts responsivos, Flexbox, Grid e design moderno.</p>
-    </div>
-
-    <div class="skill-card">
-      <h3>JavaScript</h3>
-      <p>Manipulação do DOM, interações e lógica básica.</p>
-    </div>
-
-    <div class="skill-card">
-      <h3>Git & GitHub</h3>
-      <p>Versionamento de código, branches e deploy.</p>
-    </div>
-
-    <div class="skill-card">
-      <h3>Responsividade</h3>
-      <p>Layouts adaptáveis para desktop, tablet e mobile.</p>
-    </div>
-
-    <div class="skill-card">
-      <h3>Deploy</h3>
-      <p>Publicação de projetos com Vercel e GitHub Pages.</p>
-    </div>
-  </div>
-</section>
-
-  <!-- PROJETOS -->
-  <section class="projetos" id="projetos">
-    <h2>Projetos</h2>
-
-    <div class="cards">
-      <div class="card">
-        <h3>Bella Pizza</h3>
-        <p>Site responsivo para pizzaria, com layout moderno.</p>
-        <a href="https://bella-pizza-sand.vercel.app" target="_blank">Ver projeto</a>
+    <div class="hero-left">
+      <div class="hero-available fade">
+        <span class="available-dot"></span>
+        Disponível para oportunidades
       </div>
-
-      <div class="card">
-        <h3>Pet Love</h3>
-        <p>Site institucional para loja pet, com design responsivo.</p>
-        <a href="https://pet-llove.vercel.app" target="_blank">Ver projeto</a>
+      <h1 class="hero-h1 fade fade-d1">
+        Tatiane<br><em>Costa</em>
+      </h1>
+      <p class="hero-role fade fade-d2">Front-End Developer · Rio de Janeiro, RJ</p>
+      <p class="hero-bio fade fade-d3">
+        Graduada em Análise e Desenvolvimento de Sistemas, com foco em
+        desenvolvimento web e projetos práticos em Front-End. Comprometida
+        com código limpo, design responsivo e experiências digitais que funcionam.
+      </p>
+      <div class="hero-actions fade fade-d4">
+        <a href="#projetos" class="btn-primary">Ver projetos →</a>
+        <a href="#contato" class="btn-outline">Entrar em contato</a>
       </div>
+    </div>
 
-      <div class="card">
-        <h3>Loja Responsiva</h3>
-        <p>Projeto de loja desenvolvido com HTML, CSS e Bootstrap, focado em responsividade.</p>
-        <a href="https://loja-responsiva-peach.vercel.app" target="_blank">Ver projeto</a>
+    <div class="hero-right">
+      <div class="profile-block fade fade-d1">
+        <div class="profile-initials">TC</div>
+        <div>
+          <p class="profile-name">Tatiane Costa</p>
+          <p class="profile-title">Front-End Developer</p>
+        </div>
       </div>
-
-      <div class="card">
-        <h3>Loja de Carros</h3>
-        <p>Aplicação web para exibição e listagem de veículos.</p>
-        <a href="https://venda-de-carros-sooty.vercel.app" target="_blank">Ver projeto</a>
+      <div class="info-grid fade fade-d2">
+        <div class="info-row">
+          <span class="info-label">Graduação</span>
+          <span class="info-value">ADS — Concluída</span>
+        </div>
+        <div class="info-row">
+          <span class="info-label">Foco</span>
+          <span class="info-value">Front-End Web</span>
+        </div>
+        <div class="info-row">
+          <span class="info-label">Projetos</span>
+          <span class="info-value">5 publicados</span>
+        </div>
+        <div class="info-row">
+          <span class="info-label">Localização</span>
+          <span class="info-value">Rio de Janeiro</span>
+        </div>
+        <div class="info-row">
+          <span class="info-label">Status</span>
+          <span class="info-value green">● Disponível</span>
+        </div>
+      </div>
+      <div class="hero-links fade fade-d3">
+        <a href="https://github.com/Tatianecostadacosta" target="_blank" class="hero-link-btn">GitHub</a>
+        <a href="https://www.linkedin.com/in/tatiane-de-oliveira-costa-da-costa-007876177" target="_blank" class="hero-link-btn">LinkedIn</a>
       </div>
     </div>
   </section>
 
-  <!-- CONTATO -->
-  <section class="contato" id="contato">
-   <div class="contato-box">
-  <h2>Contato</h2>
-
-  <p>Email: tatyanecostadacosta@gmail.com</p>
-  <p>Telefone: (21) 96778-2572</p>
-
-  <p>
-    <a href="https://github.com/Tatianecostadacosta" target="_blank">GitHub</a> |
-    <a href="https://www.linkedin.com/in/tatiane-de-oliveira-costa-da-costa-007876177" target="_blank">
-      LinkedIn
-    </a>
-  </p>
-</div>
+  <!-- ── SOBRE ── -->
+  <section class="section" id="sobre-mim">
+    <div class="container">
+      <p class="section-label fade">Sobre mim</p>
+      <div class="about-grid">
+        <div class="about-text fade fade-d1">
+          <h2 class="section-title" style="margin-bottom:28px;">
+            Criando interfaces que <em>funcionam de verdade</em>
+          </h2>
+          <p>
+            Sou desenvolvedora front-end com formação em Análise e Desenvolvimento de Sistemas.
+            Ao longo da minha trajetória, construí projetos variados — de sites institucionais
+            a lojas virtuais — sempre com atenção à responsividade e à experiência do usuário.
+          </p>
+          <p>
+            Trabalho com HTML, CSS, JavaScript e ferramentas como Git e Vercel,
+            mantendo boas práticas de código e estrutura semântica em cada projeto.
+            Busco minha primeira oportunidade profissional para aplicar e
+            expandir essas habilidades em um ambiente colaborativo.
+          </p>
+        </div>
+        <div class="about-highlights fade fade-d2">
+          <div class="highlight-item">
+            <span class="highlight-num">5+</span>
+            <div class="highlight-info">
+              <strong>Projetos publicados</strong>
+              <span>Sites funcionais hospedados na Vercel e GitHub Pages</span>
+            </div>
+          </div>
+          <div class="highlight-item">
+            <span class="highlight-num">6</span>
+            <div class="highlight-info">
+              <strong>Tecnologias dominadas</strong>
+              <span>HTML5, CSS3, JavaScript, SCSS, Git, Bootstrap</span>
+            </div>
+          </div>
+          <div class="highlight-item">
+            <span class="highlight-num">100%</span>
+            <div class="highlight-info">
+              <strong>Projetos responsivos</strong>
+              <span>Mobile-first em todos os trabalhos desenvolvidos</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
+
+  <!-- ── SKILLS ── -->
+  <section class="section" id="skills">
+    <div class="container">
+      <p class="section-label fade">Habilidades técnicas</p>
+      <h2 class="section-title fade fade-d1">Stack &amp; <em>ferramentas</em></h2>
+      <div class="skills-grid">
+        <div class="skill-card fade fade-d1">
+          <div class="skill-icon">🏗️</div>
+          <p class="skill-name">HTML5</p>
+          <p class="skill-desc">Estruturação semântica, acessibilidade e boas práticas de marcação.</p>
+        </div>
+        <div class="skill-card fade fade-d2">
+          <div class="skill-icon">🎨</div>
+          <p class="skill-name">CSS3 &amp; SCSS</p>
+          <p class="skill-desc">Layouts com Flexbox e Grid, animações, variáveis e design responsivo.</p>
+        </div>
+        <div class="skill-card fade fade-d3">
+          <div class="skill-icon">⚡</div>
+          <p class="skill-name">JavaScript</p>
+          <p class="skill-desc">Manipulação do DOM, eventos, lógica de interface e interatividade.</p>
+        </div>
+        <div class="skill-card fade fade-d1">
+          <div class="skill-icon">🔀</div>
+          <p class="skill-name">Git &amp; GitHub</p>
+          <p class="skill-desc">Versionamento, branches, commits organizados e colaboração.</p>
+        </div>
+        <div class="skill-card fade fade-d2">
+          <div class="skill-icon">📱</div>
+          <p class="skill-name">Responsividade</p>
+          <p class="skill-desc">Abordagem mobile-first com media queries e layouts adaptativos.</p>
+        </div>
+        <div class="skill-card fade fade-d3">
+          <div class="skill-icon">🚀</div>
+          <p class="skill-name">Deploy</p>
+          <p class="skill-desc">Publicação e entrega de projetos com Vercel e GitHub Pages.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PROJETOS ── -->
+  <section class="section" id="projetos">
+    <div class="container">
+      <p class="section-label fade">Trabalhos recentes</p>
+      <h2 class="section-title fade fade-d1">Projetos <em>selecionados</em></h2>
+      <div class="projects-list">
+
+        <a href="https://bella-pizza-sand.vercel.app" target="_blank" class="project-item fade">
+          <span class="proj-index">01</span>
+          <div class="proj-body">
+            <p class="proj-title">Bella Pizza</p>
+            <p class="proj-desc-text">Site responsivo para pizzaria com layout moderno e foco em usabilidade.</p>
+            <div class="proj-stack">
+              <span class="proj-chip">HTML5</span>
+              <span class="proj-chip">CSS3</span>
+              <span class="proj-chip">Vercel</span>
+            </div>
+          </div>
+          <div class="proj-arrow-wrap">↗</div>
+        </a>
+
+        <a href="https://pet-llove.vercel.app" target="_blank" class="project-item fade fade-d1">
+          <span class="proj-index">02</span>
+          <div class="proj-body">
+            <p class="proj-title">Pet Love</p>
+            <p class="proj-desc-text">Site institucional para loja pet com design responsivo e atrativo.</p>
+            <div class="proj-stack">
+              <span class="proj-chip">HTML5</span>
+              <span class="proj-chip">CSS3</span>
+              <span class="proj-chip">Vercel</span>
+            </div>
+          </div>
+          <div class="proj-arrow-wrap">↗</div>
+        </a>
+
+        <a href="https://loja-responsiva-peach.vercel.app" target="_blank" class="project-item fade fade-d2">
+          <span class="proj-index">03</span>
+          <div class="proj-body">
+            <p class="proj-title">Loja Responsiva</p>
+            <p class="proj-desc-text">Loja virtual com HTML, CSS e Bootstrap com abordagem mobile-first.</p>
+            <div class="proj-stack">
+              <span class="proj-chip">HTML5</span>
+              <span class="proj-chip">CSS3</span>
+              <span class="proj-chip">Bootstrap</span>
+            </div>
+          </div>
+          <div class="proj-arrow-wrap">↗</div>
+        </a>
+
+        <a href="https://venda-de-carros-sooty.vercel.app" target="_blank" class="project-item fade fade-d3">
+          <span class="proj-index">04</span>
+          <div class="proj-body">
+            <p class="proj-title">Loja de Carros</p>
+            <p class="proj-desc-text">Aplicação web para exibição e listagem de veículos com interface elegante.</p>
+            <div class="proj-stack">
+              <span class="proj-chip">HTML5</span>
+              <span class="proj-chip">CSS3</span>
+              <span class="proj-chip">JavaScript</span>
+            </div>
+          </div>
+          <div class="proj-arrow-wrap">↗</div>
+        </a>
+
+        <a href="https://github.com/Tatianecostadacosta/homem-de-ferro-landing" target="_blank" class="project-item fade fade-d4">
+          <span class="proj-index">05</span>
+          <div class="proj-body">
+            <p class="proj-title">Homem de Ferro — Landing Page</p>
+            <p class="proj-desc-text">Landing page temática com animações e estilização avançada em SCSS.</p>
+            <div class="proj-stack">
+              <span class="proj-chip">HTML5</span>
+              <span class="proj-chip">SCSS</span>
+              <span class="proj-chip">Animações CSS</span>
+            </div>
+          </div>
+          <div class="proj-arrow-wrap">↗</div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTATO ── -->
+  <section class="section" id="contato" style="border-bottom:none;">
+    <div class="container">
+      <p class="section-label fade">Contato</p>
+      <h2 class="section-title fade fade-d1">Vamos <em>conversar</em></h2>
+      <div class="contact-grid">
+        <div>
+          <p class="contact-intro fade fade-d2">
+            Estou disponível para oportunidades de trabalho, estágios e
+            colaborações. Se quiser conversar sobre um projeto ou posição,
+            me manda uma mensagem — responderei em breve.
+          </p>
+          <div class="contact-details">
+            <a href="mailto:tatyanecostadacosta@gmail.com" class="contact-row fade fade-d2">
+              <div class="contact-row-icon">✉️</div>
+              <div class="contact-row-info">
+                <p class="contact-row-label">E-mail</p>
+                <p class="contact-row-value">tatyanecostadacosta@gmail.com</p>
+              </div>
+              <span class="contact-row-chevron">→</span>
+            </a>
+            <a href="tel:+5521967782572" class="contact-row fade fade-d3">
+              <div class="contact-row-icon">📱</div>
+              <div class="contact-row-info">
+                <p class="contact-row-label">Telefone / WhatsApp</p>
+                <p class="contact-row-value">(21) 96778-2572</p>
+              </div>
+              <span class="contact-row-chevron">→</span>
+            </a>
+            <a href="https://github.com/Tatianecostadacosta" target="_blank" class="contact-row fade fade-d4">
+              <div class="contact-row-icon">💻</div>
+              <div class="contact-row-info">
+                <p class="contact-row-label">GitHub</p>
+                <p class="contact-row-value">github.com/Tatianecostadacosta</p>
+              </div>
+              <span class="contact-row-chevron">→</span>
+            </a>
+            <a href="https://www.linkedin.com/in/tatiane-de-oliveira-costa-da-costa-007876177" target="_blank" class="contact-row fade fade-d5">
+              <div class="contact-row-icon">🔗</div>
+              <div class="contact-row-info">
+                <p class="contact-row-label">LinkedIn</p>
+                <p class="contact-row-value">linkedin.com/in/tatiane-costa</p>
+              </div>
+              <span class="contact-row-chevron">→</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-right fade fade-d2">
+          <p class="contact-quote">
+            "Bom código não é sobre ser o mais esperto — é sobre ser o mais claro."
+          </p>
+          <p class="contact-quote-author">— princípio de desenvolvimento</p>
+          <div class="contact-socials">
+            <a href="https://github.com/Tatianecostadacosta" target="_blank" class="social-btn">GitHub</a>
+            <a href="https://www.linkedin.com/in/tatiane-de-oliveira-costa-da-costa-007876177" target="_blank" class="social-btn">LinkedIn</a>
+            <a href="mailto:tatyanecostadacosta@gmail.com" class="social-btn">E-mail</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    <div class="footer-inner">
+      <span class="footer-brand">Tatiane Costa</span>
+      <span class="footer-note">© 2025 · Front-End Developer · Rio de Janeiro</span>
+    </div>
+  </footer>
 
   <script src="css/js/script.js"></script>
-
-
 </body>
 </html>
